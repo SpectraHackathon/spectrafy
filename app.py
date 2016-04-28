@@ -60,7 +60,7 @@ def classify_upload():
   #process the image
   resultFilename = process_image(image)
   #send it back
-  return send_file(resultFilename)
+  return send_file(resultFilename,mimetype='image/png')
 
 if __name__ == '__main__':
   port = int(os.environ.get("PORT", 5000))
