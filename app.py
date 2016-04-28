@@ -16,47 +16,10 @@ def process_image(img):
   mask = mask.convert('RGBA')
   #make sure it matches the size of the image
   mask = mask.resize(img.size)
-  #enhance it by raising its saturation
-  # converter = ImageEnhance.Color(mask)
-  # mask = converter.enhance(2.0)
-  #get mutable data
-  mdata = mask.getdata()
 
   #make sure our image has alpha channel
   img = img.convert('RGBA')
-  #dummy convert does nothing but available for saturation tweaking
-  # converter = ImageEnhance.Color(img)
-  # img = converter.enhance(1.0)
-  #get mutable data
-  idata = img.getdata()
 
-  #create output data
-  newdata = []
-  #loop through our mask and image pixels
-  for iitem, mitem in zip(idata, mdata):
-    #ratio of each pixel is 1:2 (image:mask)
-    #tweak this for different colorings
-    im = 1.0
-    mm = 2.0
-    #the higher b, the higher the brightness
-    b = .3
-    #create RGBs
-    r = int((iitem[0] * (1.0 - mitem[3]) + mitem[0] * mitem[3]))
-    g = int((iitem[1] * (1.0 - mitem[3]) + mitem[1] * mitem[3]))
-    b = int((iitem[2] * (1.0 - mitem[3]) + mitem[2] * mitem[3]))
-    a = max(iitem[3],mitem[3])
-
-    # r = int((iitem[0] * im + mitem[0] * mm) / (im + mm - b))
-    # g = int((iitem[1] * im + mitem[1] * mm) / (im + mm - b))
-    # b = int((iitem[2] * im + mitem[2] * mm) / (im + mm - b))
-    # a = 255
-    #add it to our output
-    newdata.append((r, g, b, a))
-
-  #create an image from our new combined data
-  # img.putdata(newdata)
-
-  # img = Image.blend(img, mask, 1.0)
   #unique name
   filename = uuid.uuid4().hex + '.png'
   filename = os.path.join('/tmp', filename)
@@ -68,7 +31,7 @@ def process_image(img):
 def index():
     return render_template('index.html')
 
-@app.route('/technify', methods=['POST'])
+@app.route('/codedayify', methods=['POST'])
 def classify_upload():
   try:
     #get the image from the request
