@@ -1,6 +1,8 @@
-# technify
+# CodeDay-ify
 
-Check out [Technica](https://gotechnica.org), an all-ladies hackathon. They've been making these sweet profile pictures and I thought I'd make a quick script that automates the process.
+Check out [CodeDay](https://codeday.org), a 24-hour programming event for students.
+
+This project is forked from [AlexEKoren/Technify](https://github.com/AlexEKoren/Technify).
 
 Here's a [demo](http://technify.herokuapp.com)
 
