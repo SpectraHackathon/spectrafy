@@ -4,25 +4,67 @@
 
     <title>CodeDay-ify</title>
 
+    <link rel="icon" type="image/png" href="/assets/img/icon/favicon-196x196.png" />
+
+    <meta name="generator" content="Justin Yang" />
+
+    <!-- Google -->
+    <meta name="description" content="CodeDay-ify your profile picture!" />
+    <meta name="copyright" content="Justin Yang" />
+
+    <!-- Facebook -->
+    <meta property="og:title" content="CodeDay-ify" />
+    <meta property="og:site_name" content="CodeDay-ify" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://srnd.org/assets/img/press/assets/brand/codeday_logo.png" />
+    <meta property="og:url" content="http://codedayify.y4ng.com" />
+    <meta property="og:description" content="CodeDay-ify your profile picture!" />
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="CodeDay-ify" />
+    <meta name="twitter:description" content="CodeDay-ify your profile picture!" />
+    <meta name="twitter:image" content="https://srnd.org/assets/img/press/assets/brand/codeday_logo.png" />
+    <meta name="twitter:url" content="http://codedayify.y4ng.com" />
+    <meta name="twitter:domain" content="codedayify.y4ng.com" />
+
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     <style>
+      html {
+        font-size: 14px;
+      }
+
       body {
-        background-color: rgba(0, 255, 255, .2);
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        line-height:1.5em;
+        background-color: #cb7972;
+        font-family: "proxima-nova", "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        line-height: 1.5em;
         color: #232323;
         -webkit-font-smoothing: antialiased;
         text-align: center;
+        color: white;
       }
 
       h1, h2, h3 {
         text-align: center;
         padding: 0px;
         margin: 0;
+      }
+
+      h1 {
+        font-size: 3.583rem;
+        font-weight: 700;
+      }
+
+      h3 {
+        font-size: 1.44rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.44rem;
       }
 
       .container {
@@ -34,9 +76,23 @@
         margin-top: 30px;
       }
 
+      .btn {
+        background-color: #75c697;
+      }
+
       a {
-        color: #cd7a72;
-        font-size: 1.1em;
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      footer {
+        padding: 20px 0 20px 0;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
       }
 
     </style>
@@ -48,18 +104,21 @@
 
     <div class="container">
       <h1>CodeDay-ify</h1>
-      <h3>Upload an image to CodeDay-ify it! Make sure its a JPG, JPEG, or PNG!</h3>
-      <h4>Preferably upload a pre-cropped, square image</h4>
+      <h3>Upload a pre-cropped, square image to CodeDay-ify it!</h3>
+      <h4>Make sure it's a PNG, JPG, or JPEG.</h4>
       <p>Make sure to check out <a href="https://codeday.org">CodeDay</a>!</p>
       <form id="formupload" class="form-inline" role="form" action="codedayify" method="post" enctype="multipart/form-data">
         <div class="form-group">
           <label for="imagefile">Choose an image</label>
           <input type="file" name="imagefile" id="imagefile">
         </div>
-        <input type="submit" class="btn btn-primary" value="CodeDay-ify!" id="codedayify"></input>
+        <input type="submit" class="btn" value="CodeDay-ify!" id="codedayify"></input>
       </form>
-      <h4>Forked from <a href="https://github.com/AlexEKoren/Technify">AlexEKoren/Technify</a></h4>
     </div>
+
+    <footer>
+      <p>Forked from <a href="https://github.com/AlexEKoren/Technify">AlexEKoren/Technify</a></p>
+    </footer>
 
  </body>
 </html>
