@@ -37,7 +37,7 @@ def classify_upload():
     #get the image from the request
     imagefile = request.files['imagefile']
     filename_ = str(datetime.datetime.now()).replace(' ', '_') + \
-            werkzeug.secure_filename(imagefile.filename) + '.png'
+            werkzeug.secure_filename(imagefile.filename)
     filename = os.path.join('/tmp', filename_)
 
     #make sure it has the correct file type
@@ -60,7 +60,7 @@ def classify_upload():
   #process the image
   resultFilename = process_image(image)
   #send it back
-  return send_file(resultFilename, mimetype='image/png', attachment_filename='codedayify.png')
+  return send_file(resultFilename, mimetype='image/png', as_attachment=True, attachment_filename='codedayify.png')
 
 if __name__ == '__main__':
   port = int(os.environ.get("PORT", 5000))
