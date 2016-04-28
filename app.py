@@ -37,7 +37,7 @@ def classify_upload():
     #get the image from the request
     imagefile = request.files['imagefile']
     filename_ = str(datetime.datetime.now()).replace(' ', '_') + \
-            werkzeug.secure_filename(imagefile.filename)
+            werkzeug.secure_filename(imagefile.filename) + '.png'
     filename = os.path.join('/tmp', filename_)
 
     #make sure it has the correct file type
