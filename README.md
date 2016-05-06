@@ -4,9 +4,9 @@ Check out [CodeDay](https://codeday.org), a 24-hour programming event for studen
 
 This project is forked from [AlexEKoren/Technify](https://github.com/AlexEKoren/Technify).
 
-Here's a [demo](http://technify.herokuapp.com)
+Here's a [demo](http://codedayify.y4ng.com).
 
-![Example image](https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xtp1/v/t1.0-9/12065864_10153756088753934_4384990127825949916_n.jpg?oh=f254da41e8d6f88f02c566b3d4003c32&oe=575C78EF "Example image")
+![Example image](https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/13094188_1013828435371689_9026862867734553752_n.jpg?oh=a7bde7b9823ecf6e56fe7ca223f971c9&oe=57A93435 "Example image")
 An example of what I got from putting my Facebook profile picture through it.
 
 ## Setup
