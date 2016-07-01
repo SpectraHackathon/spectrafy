@@ -1,13 +1,8 @@
-# CodeDay-ify
+# Spectra-fy
 
-Check out [CodeDay](https://codeday.org), a 24-hour programming event for students.
+Check out [Spectra](https://sospectra.com), a brand-new all-females hackathon coming to the San Francisco Bay Area.
 
 This project is forked from [AlexEKoren/Technify](https://github.com/AlexEKoren/Technify).
-
-Here's a [demo](http://codedayify.y4ng.com).
-
-![Example image](https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/13094188_1013828435371689_9026862867734553752_n.jpg?oh=a7bde7b9823ecf6e56fe7ca223f971c9&oe=57A93435 "Example image")
-An example of what I got from putting my Facebook profile picture through it.
 
 ## Setup
 ```
