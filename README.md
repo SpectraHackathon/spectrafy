@@ -1,6 +1,6 @@
 # Spectra-fy
 
-Check out [Spectra](https://sospectra.com), a brand-new all-females hackathon coming to the San Francisco Bay Area.
+Check out [Spectra](https://sospectra.com), a brand-new all women hackathon coming to the San Francisco Bay Area.
 
 This project is forked from [AlexEKoren/Technify](https://github.com/AlexEKoren/Technify).
 
