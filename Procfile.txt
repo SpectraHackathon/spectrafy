@@ -1,0 +1,1 @@
+web: gunicorn getting started.wsgi --log-file -
