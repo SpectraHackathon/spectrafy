@@ -25,69 +25,57 @@
 <!--     <meta name="twitter:image" content="https://codeday.org/assets/img/og.jpg" />
  -->    <meta name="twitter:url" content="http://spectrafy.sospectra.com" />
     <meta name="twitter:domain" content="spectrafy.sosopectra.com" />
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-
+    
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100" rel="stylesheet" type="text/css">
+        
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     <style>
-      html {
-        font-size: 14px;
+    html {
+        font-size: 16px;
       }
 
-      body {
-        background-image: url(https://github.com/catherinemcmahon/spectrahackathon.github.io/raw/master/images/background.jpg);
-        /*background-color: #736DC8;*/
+    body {
+    background-image: url(https://github.com/catherinemcmahon/spectrahackathon.github.io/raw/master/images/background.jpg);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5em;
+    color: #232323;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    color: white;
+    }
+    h1, h2, h3, h4, p, label {
         font-family: 'Roboto', sans-serif;
-        line-height: 1.5em;
-        color: #232323;
-        -webkit-font-smoothing: antialiased;
-        text-align: center;
-        color: white;
-      }
-
-      h1, h2, h3 {
+        font-weight: 100;
         text-align: center;
         padding: 0px;
-        margin: 0;
-      }
-
-      h1 {
-        font-size: 3.583rem;
-        font-weight: 700;
-      }
-
-      h3 {
-        font-size: 1.44rem;
-      }
-
-      p {
-        font-size: 1rem;
-        line-height: 1.44rem;
-      }
-
-      .container {
+    }
+    h2 {
+        font-weight: 80;
+        font-size: 60px;
+    }
+    .container {
         max-width: 400px;
         margin: 200px auto;
-      }
-
-      #formupload {
-        margin-top: 30px;
-      }
-
-      .btn {
+    }
+    #formupload {
+        margin-top: 10px;
+    }
+    .btn {
         background-color: #981CEB;
-      }
-
-      a {
+    }
+    a {
         color: inherit;
         text-decoration: underline;
-      }
-      a:hover {
+    }
+    a:hover {
         color: #981CEB;
-      }
-
-      footer {
+    }
+    footer {
         padding: 20px 0 20px 0;
         width: 100%;
         position: fixed;
@@ -95,20 +83,21 @@
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-      }
-
+    }
     </style>
-  </head>
+    </head>
 
   <body>
+       <a href="https://github.com/catherinemcmahon/spectrafy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
-    <a href="https://github.com/catherinemcmahon/spectrafy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+<!--<img class="logo img-responsive" src="https://raw.githubusercontent.com/SpectraHackathon/SpectraHackathon.github.io/master/images/logo.png" alt="Spectrafy" style="margin-top 30px auto;margin: 40px auto; height: 40%; width: 40%">-->
 
-    <div class="container">
-      <h1>Spectrafy</h1>
-      <h3>Upload a pre-cropped, square image to Spectrafy it!</h3>
+ <div class="container">
+    <h2>Spectrafy</h2>
+    <h3>Upload a pre-cropped, square image to Spectrafy it!</h3>
+    <h4>Note: 800px work best!</h4>
       <h4>Accepted formats: PNG, JPG, or JPEG</h4>
-      <p>Make sure to check out <a href="https://sospectra.com">Spectra Hackathon</a>!</p>
+      <p>Make sure to check out <a href="https://sospectra.com">Spectra Hackathon</a></p>
       <form id="formupload" class="form-inline" role="form" action="spectrafy" method="post" enctype="multipart/form-data">
         <div class="form-group">
           <label for="imagefile">Choose an image</label>
@@ -118,10 +107,9 @@
       </form>
       <p>Not working? Create one with the <a href="https://github.com/catherinemcmahon/Spectrafy/raw/master/mask.psd">Photoshop template</a> instead.</p>
     </div>
-
     <footer>
       <p>Forked from <a href="https://github.com/AlexEKoren/Technify">AlexEKoren/Technify</a></p>
     </footer>
-
+    <div>
  </body>
 </html>
