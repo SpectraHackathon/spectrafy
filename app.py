@@ -54,7 +54,7 @@ def classify_upload():
     image = Image.open(filename)
   except Exception as err:
     #uh oh. Something went wrong.
-    print 'Uploaded image open error: ' + err
+    print('Uploaded image open error: ' + err)
     return 'Error: ' + err
 
   #process the image
